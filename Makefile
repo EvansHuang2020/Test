@@ -1,7 +1,6 @@
-hello: main.o
-	cc -o hello main.o
-main.o : hello.c
-	cc -c hello.c
-clean:
-	rm hello main.o
+#helloworld is a binary file
+helloworld: hello.o
+        gcc -o helloworld hello.o
+hello.o: hello.c
+        gcc -c -o hello.o hello.c
 	
