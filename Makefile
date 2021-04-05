@@ -4,3 +4,4 @@ main.o : hello.c
 	cc -c hello.c
 clean:
 	rm hello main.o
+	
